@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+
+:root {
+  --background-color: rgb(50, 60, 65);
+  --font-color: #fafafa;
+  --green-color: #00ff00;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  border-color: var(--font-color);
+  outline: none !important;
+}
+
+html,
+input,
+select {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  outline: 0 !important;
+  color: var(--font-color);
+  text-decoration: none !important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+html.noscroll {
+  overflow: hidden;
+}
+
+body.noscroll {
+  overflow: visible;
+  height: 100%;
+}
+
+
+a,
+button,
+input {
+  color: var(--font-color);
+}
+
+a,
+a:focus,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@-webkit-keyframes autofill {
+  0%,
+  100% {
+    color: var(--font-color);
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
